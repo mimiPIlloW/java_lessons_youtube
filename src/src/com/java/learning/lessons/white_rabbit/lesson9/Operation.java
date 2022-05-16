@@ -1,4 +1,4 @@
-package com.java.learning.lessons.white.rabbit.lesson9;
+package com.java.learning.lessons.white_rabbit.lesson9;
 
 public class Operation {
     Integer a = 5, b = 6, c;
@@ -10,5 +10,10 @@ public class Operation {
         result = str1 + str2;
         System.out.println(c + " " + result);
         System.out.println(Math.PI);
+    }
+
+    public static void main(String[] args) {
+        Operation operation = new Operation();
+        operation.foo();
     }
 }
