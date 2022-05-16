@@ -1,4 +1,4 @@
-package com.java.learning.lessons.white.rabbit.lesson14;
+package com.java.learning.lessons.white_rabbit.lesson14;
 
 public class Candy {
 }
