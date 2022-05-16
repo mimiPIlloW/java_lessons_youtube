@@ -1,4 +1,4 @@
-package com.java.learning.lessons.white.rabbit.lesson15;
+package com.java.learning.lessons.white_rabbit.lesson15;
 
 public class Flower {
     String name; // переменные в классе
