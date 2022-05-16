@@ -1,44 +1,52 @@
-package com.java.learning.lessons.white.rabbit.lesson13;
+package com.java.learning.lessons.white_rabbit.lesson13;
 
 public class ForLoop {
 
-//    public void foo() {
+//    static public void foo() {
 //        for (; ; ) {                             // while (true) {}
 //            System.out.println("a");
 //        }
 //    }
 
-    public void foo1() {
+    static public void foo1() {
         for (int i = 0; i < 10; i++) {
-            System.out.println(i);
+            System.out.print(i);
         }
 
-        System.out.println(); // одинаково
+        System.out.println("\n"); // одинаково
 
         int a = 0;
         while (a < 10) {
-            System.out.println(a);
+            System.out.print(a);
             a++;
         }
 
-        System.out.println();
+        System.out.println("\n");
 
         for (int i = 0; i < 10; i += 2) {
-            System.out.println(i);
+            System.out.print(i);
+        }
+
+        System.out.println("\n");
+    }
+
+    static int[] array = {1, 2, 3};
+
+    static public void foo2() {
+        for (int element : array) {
+            System.out.print(element);
+        }
+
+        System.out.println("\nОдинаковые просто верхнее короче");
+
+        for (int w = 0; w < array.length; w++) {
+            System.out.print(array[w]);
         }
     }
 
-    int[] array = {1, 2, 3};
-
-    public void foo2() {
-        for (int element : array) {
-            System.out.println(element);
-        }
-
-        System.out.println("Одинаковые просто верхнее короче");
-
-        for (int w =0; w<array.length; w++){
-            System.out.println(array[w]);
-        }
+    public static void main(String[] args) {
+//        foo();
+        foo1();
+        foo2();
     }
 }
