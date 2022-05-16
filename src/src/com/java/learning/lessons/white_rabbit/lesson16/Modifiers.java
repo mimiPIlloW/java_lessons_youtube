@@ -1,4 +1,4 @@
-package com.java.learning.lessons.white.rabbit.lesson16;
+package com.java.learning.lessons.white_rabbit.lesson16;
 
 public class Modifiers { // private       default      protected    public
     //применяются как к классу так и к его состовляющим (полям,методам,конуструкторам)
@@ -35,9 +35,9 @@ public class Modifiers { // private       default      protected    public
 
     // В нашем классе мы модем создать объект нашего класса
     // если мы используем статик метод то мы сможем создать объект нашего класса не используя оператор new
-////    public static void foo2() {
-////        Modifiers modifiers = new Modifiers();
-////   }
+//    public static void foo2() {
+//        Modifiers modifiers = new Modifiers();
+//   }
 
     // privat методы пишут для того чтобы выделить какой то общий функционал в данный метод и данный метод скрыть от общего доступа
     // например
