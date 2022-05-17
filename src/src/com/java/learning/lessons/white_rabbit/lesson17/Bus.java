@@ -1,4 +1,4 @@
-package com.java.learning.lessons.white.rabbit.lesson17;
+package com.java.learning.lessons.white_rabbit.lesson17;
 
 // поля и методы
 
@@ -24,6 +24,7 @@ public class Bus {
 
     public String showKm2() {
         String str = "70km";
+        System.out.println(str);
         return str;
     }
 
@@ -48,7 +49,7 @@ public class Bus {
     }
 
     // метод может принимать не только одну переменную
-    public void showAccept3(int km3, String name3){
+    public void showAccept3(int km3, String name3) {
         System.out.print(km3);
         System.out.print("+");
         System.out.println(name3);
