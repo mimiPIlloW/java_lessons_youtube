@@ -1,4 +1,4 @@
-package com.java.learning.lessons.white.rabbit.lesson18;
+package com.java.learning.lessons.white_rabbit.lesson18;
 
 // Модификатор static
 //применим к полям методам классам и логическим блокам
