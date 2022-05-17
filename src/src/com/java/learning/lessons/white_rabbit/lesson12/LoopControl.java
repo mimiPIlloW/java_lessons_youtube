@@ -1,11 +1,10 @@
 package com.java.learning.lessons.white_rabbit.lesson12;
 
 public class LoopControl {
+    private boolean value = true;
+    private int a = 5, b = 7;
 
-   static private boolean value = true;
-    static private int a = 5, b = 7;
-
-    static public void foo() {
+    public void foo() {
 
         while (a < b) {
             System.out.println(a);
@@ -24,9 +23,5 @@ public class LoopControl {
             a++;
             System.out.println(a);
         } while (a < b);
-    }
-
-    public static void main(String[] args) {
-        foo();
     }
 }

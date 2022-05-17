@@ -1,9 +1,9 @@
 package com.java.learning.lessons.white_rabbit.lesson11;
 
 public class OperatorSwitch {
-    static public final int VALUE = 2, FIRST_VALUE = 1, SECOND_VALUE = 2, THIRD_VALUE = 3;
+    public final int VALUE = 2, FIRST_VALUE = 1, SECOND_VALUE = 2, THIRD_VALUE = 3;
 
-    static public void foo() {
+    public void foo() {
         switch (40) {
             case 25:
                 System.out.println(25);
@@ -14,7 +14,7 @@ public class OperatorSwitch {
         }
     }
 
-    static public void foo1() {
+    public void foo1() {
         switch (VALUE) {
             case FIRST_VALUE:
                 System.out.println(FIRST_VALUE);
@@ -28,12 +28,6 @@ public class OperatorSwitch {
             default:
                 System.out.println("Default");
         }
-    }
-
-    public static void main(String[] args) {
-        foo();
-        System.out.println();
-        foo1();
     }
 }
 

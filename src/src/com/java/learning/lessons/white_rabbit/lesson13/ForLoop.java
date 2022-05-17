@@ -8,7 +8,7 @@ public class ForLoop {
 //        }
 //    }
 
-    static public void foo1() {
+    public void foo1() {
         for (int i = 0; i < 10; i++) {
             System.out.print(i);
         }
@@ -30,9 +30,9 @@ public class ForLoop {
         System.out.println("\n");
     }
 
-    static int[] array = {1, 2, 3};
+    int[] array = {1, 2, 3};
 
-    static public void foo2() {
+    public void foo2() {
         for (int element : array) {
             System.out.print(element);
         }
@@ -42,11 +42,5 @@ public class ForLoop {
         for (int w = 0; w < array.length; w++) {
             System.out.print(array[w]);
         }
-    }
-
-    public static void main(String[] args) {
-//        foo();
-        foo1();
-        foo2();
     }
 }

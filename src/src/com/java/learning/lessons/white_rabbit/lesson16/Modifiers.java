@@ -35,9 +35,9 @@ public class Modifiers { // private       default      protected    public
 
     // В нашем классе мы модем создать объект нашего класса
     // если мы используем статик метод то мы сможем создать объект нашего класса не используя оператор new
-//    public static void foo2() {
-//        Modifiers modifiers = new Modifiers();
-//   }
+    public static void foo2() {
+        Modifiers modifiers = new Modifiers();
+   }
 
     // privat методы пишут для того чтобы выделить какой то общий функционал в данный метод и данный метод скрыть от общего доступа
     // например
@@ -45,7 +45,7 @@ public class Modifiers { // private       default      protected    public
 ////        Modifiers modifiers = new Modifiers();
 ////    }
 ////    public void show(){
-        // данный приватный метод мы можем использовать в данном методе show
+    // данный приватный метод мы можем использовать в данном методе show
 ////        foo3();
 ////    }
 

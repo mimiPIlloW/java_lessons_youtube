@@ -3,23 +3,21 @@ package com.java.learning.lessons.white_rabbit.lesson14;
 public class MyArrays {
 
     // создание массива с помощью new и с помощью прямой инициализации
+    int[] array = new int[3]; //(Примитивный тип)
 
-    static int[] array = new int[3]; //(Примитивный тип)
-
-    static Candy[] box1 = new Candy[5]; /*(Ссылочный тип) Конфеты которые хранятся в коробке для этого нам нужно написать его имя []-(хранилище)
+    Candy[] box1 = new Candy[5]; /*(Ссылочный тип) Конфеты которые хранятся в коробке для этого нам нужно написать его имя []-(хранилище)
     конфеты которые будут лежать в хранилище после = мы создаем данный массив и говорим что там будет 5 конфет*/
 
-    static int[] array2 = {10, 3, 7}; //сразу с инициализацией говорим какие числа будут хранится в данном массиве типом int
+    int[] array2 = {10, 3, 7}; //сразу с инициализацией говорим какие числа будут хранится в данном массиве типом int
+    Candy candyFirst = new Candy();
+    Candy candySecond = new Candy();
+    Candy candyThird = new Candy();
 
-    static Candy candyFirst = new Candy();
-    static Candy candySecond = new Candy();
-    static Candy candyThird = new Candy();
-
-    static Candy[] box2 = {candyFirst, candySecond, candyThird};
+    Candy[] box2 = {candyFirst, candySecond, candyThird};
 
     Candy[] box3;
 
-    static public void foo() {
+    public void foo() {
 //         box 1
         Candy candy = new Candy();
         box1[0] = candy;
@@ -29,13 +27,13 @@ public class MyArrays {
         System.out.println("\n");
     }
 
-    static public void foo1() {
+    public void foo1() {
 //        box2
         System.out.print(box2[2]);
         System.out.println("\n");
     }
 
-    static public void foo2() {
+    public void foo2() {
 //        array2
         System.out.print(array2[1]);
         System.out.println("\n");
@@ -46,26 +44,18 @@ public class MyArrays {
         System.out.println("\n");
     }
 
-    static public void foo3() {
+    public void foo3() {
         System.out.println(array[0]); // все элементы будут равны 0
         System.out.println();
     }
 
     // многомерные массивов в JAVA не сущ но есть массивы массивов
-    static public void foo4() {
+    public void foo4() {
         int[][] array3 = new int[2][2];
         int[][] array4 = {{2, 3}, {3, 4}};
         int[][][] array5 = {{{2, 3}, {3, 4}}, {{1, 3}, {3, 6}}, {{2, 4}, {5, 3}}};
 
         System.out.println(array4[1][0]);
         System.out.println(array5[2][1][0]);
-    }
-
-    public static void main(String[] args) {
-        foo();
-        foo1();
-        foo2();
-        foo3();
-        foo4();
     }
 }

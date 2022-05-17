@@ -1,10 +1,10 @@
 package com.java.learning.lessons.white_rabbit.lesson10;
 
 public class ControlOperators {
-    static int a = 1, b = 3;
-    static boolean value = true;
+    int a = 1, b = 3;
+    boolean value = true;
 
-    static public void foo() {
+    public void foo() {
         if (a < b) {
             System.out.println("True");
         }
@@ -15,7 +15,7 @@ public class ControlOperators {
         }
     }
 
-    static public void foo1() {
+    public void foo1() {
         if (value) {
             System.out.println("True");
             a++;
@@ -28,7 +28,7 @@ public class ControlOperators {
         }
     }
 
-    static public void foo2() {
+    public void foo2() {
         if (a > b) {
             System.out.println("A");
         } else if (a == b) {
@@ -36,13 +36,5 @@ public class ControlOperators {
         } else {
             System.out.println("False");
         }
-    }
-
-    public static void main(String[] args) {
-        foo();
-        System.out.println();
-        foo1();
-        System.out.println();
-        foo2();
     }
 }
